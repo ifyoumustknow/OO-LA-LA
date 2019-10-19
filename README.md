@@ -1,2 +1,2 @@
-# OO-LA-LA
-A NSFW Trivia game
+# Spooky Stories
+Choose your adventure
