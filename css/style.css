@@ -2,21 +2,61 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 95vh;
+    height: auto;
     background-color: coral;
     flex-wrap: wrap;
   flex-direction: column;
 }
 
-  .background {
-    background: url(gesphaus.jpg) repeat center center fixed;
-    background-size: cover;
-    width:100vw;
-    height:100vh;
-    padding:2vmin;
-    margin:auto;
-    background-color: black;
-    position: relative;
+.select{
+  cursor: pointer;
+  text-align: center;
+}
+
+.container{
+  width:60vmax;
+  height: 60vh;
+  padding: 5%;
+  background-color: black, 0.5;
+  color: white;
+  overflow: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  
+}
+
+.field{
+  background-color:rgba(red, green, blue, 0.0);
+  width: 20vw;
+  text-align: center;
+  border-radius: 5vh;
+  width: 30vmax;
+  border-style: solid;
+  font-size: 1em;
+}
+
+
+#submit{
+  background-color: black;
+  border-radius: 5vh;
+  width: auto;
+  border-style: solid;
+  font-size: 1rem;
+  margin: 5% auto;
+  color: white;;
+
+}
+
+
+.background {
+  background: url(gesphaus.jpg) no-repeat center center fixed; 
+  background-size: cover;
+  width:100vw;
+  height:100vh;
+  padding:2vmin;
+  margin:auto;
+  background-color: black;
+  position: relative;
 }
 
 .title {
@@ -27,9 +67,18 @@
 
 button{
   border-radius: 5vh;
-  width: 20vmax;
+  width: 30vmin;
   border-style: solid;
   font-size: 1em;
+}
+
+.text{
+
+  color: white;
+  margin: 2%;
+  text-align: center;
+  
+
 }
 
 body{
