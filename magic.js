@@ -90,9 +90,8 @@ window.onload = function () {
         }
 
         $(document).on('click', '#button1', function () {
-            $("#button2").css('display', 'none');
-            $("#button3").css('display', 'none');
             $("#button1").css('display', 'none');
+            $("#button2").css('display', 'none');
             $("#body2").css('display', 'inline');
             $("#body2").toggleClass('fade-in');
             $("#body2").append(`<p>I knew a ${gender2} who liked scary stories, too. These were 3 of ${gender3} favorites:<p>`);
@@ -103,12 +102,12 @@ window.onload = function () {
 
         $(document).on('click', '#button2', function () {
 
+            $("#button1").css('display', 'none')
             $("#button2").css('display', 'none')
-            $("#button3").css('display', 'none')
             $("#body1").empty();
             $("#body1").css('display', 'inline')
             $("#body1").toggleClass('fade-in');
-            $("#body1").append(`< div > That's too bad, ${textinput}</div>`);
+            $("#body1").append(`<div> That's too bad, ${name}</div>`);
 
             console.log("toobad");
 
@@ -116,7 +115,7 @@ window.onload = function () {
 
             function sad() {
                 $("#body1").empty();
-                $("#body1").append(`<div>Please try to come back when you do, ${textinput}</div>`);
+                $("#body1").append(`<div>Please try to come back when you do.</div>`);
 
             }
 
