@@ -11,8 +11,8 @@
 .select{
   cursor: pointer;
   text-align: left;
-  font-family: 'IM Fell English SC', serif;
-  text-align: center;
+  font-family: 'Trocchi', serif;
+  text-align: ;
   
 }
 
@@ -25,7 +25,6 @@
   overflow: auto;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  
   
 }
 
@@ -67,7 +66,7 @@
 }
 
 .title {
-  width:70vw;
+  width:50vw;
   margin: auto;
   font-size: 4vw;
   text-align: center;
@@ -79,6 +78,8 @@ button{
   width: 30vmin;
   border-style: solid;
   font-size: 1em;
+  background-color: white;
+
 }
 
 .text{
