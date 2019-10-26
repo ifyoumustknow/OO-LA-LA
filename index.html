@@ -21,25 +21,40 @@
         <div id="title"><img src="assets/title.png" class="title"></div>
         <div id="body1" class="text"></div>
         <button id="invite"></button>
-        <div class="row" id="introduction">
-            <select id="salute" name="title">
-                <option value="Mr."> Mr.</option>
-                <option value="Ms."> Ms.</option>
-            </select>
-            <input id="yourname"></div>
-        <div><input id="submit" type="submit"></div>
-        <div id="body2" class="text"></div>
         <div id="buttons">
             <span>
                 <button id="button1" class=""></button>
                 <button id="button2" class=""></button>
             </span>
         </div>
-        <div class="container" id="stories">
-            <p id="story1" class="select">The girl in the closet</p>
-            <p id="story2" class="select">Times Up</p>
-            <p id="story3" class="select">Something</p>
+        <div id="introduction" class="paper">
+            <h1>Welcome Guest</h1>
+            <h3>Please Check In</h3>
+            <form>
+                <select class="form-control" id="salute">
+                    <option value="Mr.">Mr.</option>
+                    <option value="Ms.">Ms.</option>
+                </select>
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname">
+                </div>
+                <div class="form-group">
+                    <label for="last">Last Name</label>
+                    <input type="text" class="form-control" id="lastname">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                </div>
+            </form>
         </div>
+        <div id="stories" class="container">
+            <div id="body2"></div>
+            <h3 id="story1" class="select">The girl in the closet</h3>
+            <h3 id="story2" class="select">Times Up</h3>
+            <h3 id="story3" class="select">Something</h3>
+        </div>
+    </div>
     </div>
     <script src="magic.js"></script>
 </body>

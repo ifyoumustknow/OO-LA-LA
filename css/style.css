@@ -10,11 +10,12 @@
 
 .select{
   cursor: pointer;
-  text-align: center;
+  text-align: left;
+  
 }
 
 .container{
-  width:60vmax;
+  width: 70vw;
   height: 60vh;
   padding: 5%;
   background-color: black, 0.5;
@@ -25,25 +26,28 @@
   
 }
 
-.field{
-  background-color:rgba(red, green, blue, 0.0);
-  width: 20vw;
-  text-align: center;
-  border-radius: 5vh;
-  width: 30vmax;
-  border-style: solid;
-  font-size: 1em;
-}
 
 
 #submit{
-  background-color: black;
-  border-radius: 5vh;
-  width: auto;
-  border-style: solid;
+
   font-size: 1rem;
-  margin: 5% auto;
   color: white;;
+  background-color: grey;
+  border-style: none;
+
+}
+
+.paper{
+  display: flex;
+  width:70 vmax;
+  height: auto;
+  padding: 3%;
+  background-color:rgb(40, 57, 53);
+  color: white;
+  overflow: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  border-radius: 2%;
 
 }
 
