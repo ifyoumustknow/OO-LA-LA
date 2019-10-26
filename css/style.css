@@ -11,6 +11,8 @@
 .select{
   cursor: pointer;
   text-align: left;
+  font-family: 'IM Fell English SC', serif;
+  text-align: center;
   
 }
 
@@ -23,6 +25,7 @@
   overflow: auto;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  
   
 }
 
@@ -66,7 +69,9 @@
 .title {
   width:70vw;
   margin: auto;
-  font-size: 5%;
+  font-size: 4vw;
+  text-align: center;
+  font-family: 'Bitter', serif;
 }
 
 button{
@@ -92,6 +97,14 @@ body{
 
 }
 /* font-family: 'Jomolhari', serif; */
+
+/* font-family: 'Bree Serif', serif;
+font-family: 'Special Elite', cursive;
+font-family: 'Trocchi', serif;
+font-family: 'Cormorant SC', serif;
+font-family: 'IM Fell English SC', serif;
+font-family: 'Vollkorn SC', serif;
+font-family: 'IM Fell DW Pica SC', serif; */ */
 
 
 .fade-in {
