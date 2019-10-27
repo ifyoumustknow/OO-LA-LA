@@ -143,11 +143,51 @@ window.onload = function () {
 
             The End.<p></div>`)
 
-            $("#button3").css('display', 'inline');
 
+        });
+
+        
+        $(document).on('click', '#story2', function () {
+            $("#story1").css('display', 'none');
+            $("#story2").css('display', 'none');
+            $("#story3").css('display', 'none');
+            $("#body2").css('display', 'none');
+            $("#body3").empty()
+            $("#body3").css('display', 'inline');
+            $("#body3").toggleClass('fade-in');
+            $("#body3").append(`<div><h1>Times Up!</h1></div> 
+            <p>You just woken up with a blinding white light above you. You look to your left and see what appears to be something shiny, like the silverware set from Christmas dinner. Your head is throbbing. You drop back down. The last thing you remember was walking to your car after the UC bootcamp class. You vaguely recall hearing quick footsteps and then a sudden pain in your neck that felt like a bad bee sting. You rub your eyes and try to sit up. And when you finally do, you realize you're on some sort of table - a cold metallic table, the kind used for operations or seen in morgues.</P>
+            Choose:
+            <span><h3 id="getout">Oh shit. I need to get out.</h3><h3 id="stay">I'm fine, nothing to worry about</h3></span>`)      
+            
 
 
         });
+
+        $(document).on('click', '#getout', function () {
+            console.log("getting the fuck out")
+            $("#story1").css('display', 'none');
+            $("#story2").css('display', 'none');
+            $("#story3").css('display', 'none');
+            $("#body2").css('display', 'none');
+            $("#body3").empty()
+            $("#body3").css('display', 'inline');
+            $("#body3").toggleClass('fade-in');
+            $("#body3").append(`<p>You try to take a step, but fall to your knees instead. The pain is excruciating, you try to scream, but instead you begin to vomit violently. Your body begins to shake and you tuck yourself into a tight ball. Once the episode subsides you pull yourself up by the table. Across from the table next to the Christmas utensils, you see a syringe and a bottle. You reach for the bottle and the label reads:</p>
+            
+           <div style="font-family: 'IM Fell English SC' , serif ; background-color:wheat ; width:50vw; height:auto; color:black; padding:5%;"><h5>Tetraethylammonium[31]</h5><p>WARNING: if symptoms include vomiting, muscle weakness followed by convulsions and cold sweat, seek medical attention within 30 minutes or symptoms will increase and may lead to death.</div>
+           <br>
+           <p>You look down at your watch and the your watch reads:
+
+
+            <br>
+            Choose:
+            <span><h3 id="getout">Oh shit. I need to get out.</h3><h3 id="stay">I'm fine, nothing to worry about</h3></span>`)      
+
+
+           
+        });
+        
 
         $(document).on('click', '#button3', function () {
             $("#button1").css('display', 'none');
@@ -164,6 +204,8 @@ window.onload = function () {
             $("#story3").css('display', 'block');
 
         });
+
+        
 
 
     });

@@ -73,7 +73,7 @@
   font-family: 'Bitter', serif;
 }
 
-button{
+.round-button{
   border-radius: 5vh;
   width: 30vmin;
   border-style: solid;
@@ -141,3 +141,4 @@ font-family: 'IM Fell DW Pica SC', serif; */ */
     opacity: 1;
   }
 }
+
