@@ -185,8 +185,19 @@ window.onload = function () {
             <span><h3 id="getout">Oh shit. I need to get out.</h3><h3 id="stay">I'm fine, nothing to worry about</h3></span>`)      
 
 
-           
+            $("#body3").prepend("<h2>Time Remaining: <span id='counter-number'></span> Seconds</h2>")
+
+            var cc = 30;
+
+            var interval = setInterval(function()   {
+                document.getElementById("counter-number").innerHTML = -- cc;
+                if (cc == 0)
+                clearInterval(interval);
+                    }, 1000);   
+
         });
+        
+               
         
 
         $(document).on('click', '#button3', function () {
