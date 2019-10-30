@@ -8,6 +8,13 @@
   flex-direction: column;
 }
 
+.timer {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  color: darkolivegreen;
+  font-family: 'Roboto Mono', monospace;
+}
 .select{
   cursor: pointer;
   text-align: left;
@@ -27,7 +34,6 @@
   word-wrap: break-word;
   
 }
-
 
 
 #submit{
@@ -75,7 +81,7 @@
 
 .round-button{
   border-radius: 5vh;
-  width: 30vmin;
+  width: 20vmin;
   border-style: solid;
   font-size: 1em;
   background-color: white;
@@ -109,8 +115,17 @@ font-family: 'IM Fell DW Pica SC', serif; */ */
 
 
 .fade-in {
-	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	-webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.flicker-2 {
+	-webkit-animation: flicker-2 2s steps(2, end) backwards;
+	        animation: flicker-2 2s steps(2, end) backwards;
+}
+
+button {
+  margin-top: 3%;
 }
 
 /* ----------------------------------------------
@@ -138,6 +153,92 @@ font-family: 'IM Fell DW Pica SC', serif; */ */
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+
+ @-webkit-keyframes flicker-2 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 1;
+  }
+  45.99% {
+    opacity: 1;
+  }
+  46% {
+    opacity: 0;
+  }
+  46.9% {
+    opacity: 0;
+  }
+  46.91% {
+    opacity: 1;
+  }
+  51.99% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  52.8% {
+    opacity: 0;
+  }
+  52.81% {
+    opacity: 1;
+  }
+}
+@keyframes flicker-2 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 1;
+  }
+  45.99% {
+    opacity: 1;
+  }
+  46% {
+    opacity: 0;
+  }
+  46.9% {
+    opacity: 0;
+  }
+  46.91% {
+    opacity: 1;
+  }
+  51.99% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  52.8% {
+    opacity: 0;
+  }
+  52.81% {
     opacity: 1;
   }
 }

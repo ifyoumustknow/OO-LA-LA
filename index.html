@@ -17,6 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Bitter|Bree+Serif|Cormorant+SC|IM+Fell+DW+Pica+SC|IM+Fell+English+SC|Special+Elite|Trocchi|Vollkorn+SC&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="https://use.typekit.net/meo4syx.css">
 
@@ -28,10 +29,10 @@
 </head>
 
 <body>
-    <div class="flex-container background">
+    <div id="background" class="flex-container background">
         <div id="title"><img src="assets/title.png" class="title"></div>
         <div id="body1" class="text"></div>
-        <button id="invite"></button>
+        <button id="invite" class="btn btn-dark"></button>
         <div id="buttons">
             <span>
                 <button id="button1" class="round-button"></button>
@@ -71,10 +72,10 @@
             <p>
                 <h3 id="story3" class="select">Something, Something.</h3>
             </p>
-            <button id="button3">back</button>
+            <button id="button3" class="btn btn-dark">back for more...</button>
 
         </div>
-    </div>
+        <p id="counter" class="timer"></p>
     </div>
 
     <script src="magic.js"></script>
