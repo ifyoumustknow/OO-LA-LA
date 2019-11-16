@@ -18,7 +18,7 @@
 
 .container{
   width: 70vw;
-  height: 60vh;
+  height: 80vh;
   padding: 5%;
   background-color: black, 0.5;
   color: white;
@@ -75,7 +75,7 @@
 
 .round-button{
   border-radius: 5vh;
-  width: 30vmin;
+  width: 20vmin;
   border-style: solid;
   font-size: 1em;
   background-color: white;
