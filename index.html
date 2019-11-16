@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Spooky Stories</title>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
@@ -17,7 +19,6 @@
     <link
         href="https://fonts.googleapis.com/css?family=Bitter|Bree+Serif|Cormorant+SC|IM+Fell+DW+Pica+SC|IM+Fell+English+SC|Special+Elite|Trocchi|Vollkorn+SC&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="https://use.typekit.net/meo4syx.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
@@ -26,7 +27,7 @@
 </head>
 
 <body>
-    <div class="flex-container background">
+    <div id="background" class="flex-container background">
         <div id="title"><img src="assets/title.png" class="title"></div>
         <div id="body1" class="text"></div>
         <button id="invite" class="btn btn-dark"></button>
@@ -69,10 +70,10 @@
             <p>
                 <h3 id="story3" class="select">Something, Something.</h3>
             </p>
-            <button id="button3">back</button>
+            <button id="button3" class="btn btn-dark">back for more...</button>
 
         </div>
-    </div>
+        <p id="counter" class="timer"></p>
     </div>
 
     <script src="magic.js"></script>

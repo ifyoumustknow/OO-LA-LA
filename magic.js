@@ -10,17 +10,19 @@ window.onload = function () {
     $("#introduction").css('display', 'none');
     $("#invite").toggleClass('fade-in');
     $("#invite").append('Please Come In');
-
+    $("#counter").css('display', 'none');
 
 
     $(document).on('click', '#invite', function () {
         $("#title").empty();
         $("#invite").css('display', 'none');
         $("#introduction").css('display', 'inline');
-        $("#introduction").toggleClass('fade-in');
+        $("#introduction").toggleClass("fade-in");
         $("#firstname").css('display', 'inline');
         $("#lastname").css('display', 'inline');
         $("#submit").css('display', 'inline');
+        $("#counter").css('display', 'none');
+
 
 
     });
@@ -55,7 +57,8 @@ window.onload = function () {
         $("#title").css('display', 'none');
         $("#introduction").css('display', 'none');
         $("#body1").empty();
-        $("#body1").toggleClass('fade-in');
+        $("#body1").toggleClass("fade-in");
+        $("#counter").css('display', 'none');
         $("#body1").append(`<div>It's so very nice to meet you, ${genderinput} ${last}</div>`);
 
 
@@ -65,7 +68,7 @@ window.onload = function () {
 
             $("#body1").empty();
             $("#body1").css('display', 'inline');
-            $("#body1").toggleClass('fade-in');
+            $("#body1").toggleClass("fade-in");
             $("#body1").append(`<div>Do you like scary stories?</div>`);
 
         }
@@ -77,10 +80,10 @@ window.onload = function () {
             $("#body1").css('display', 'none');
             $("#buttons").css('display', 'inline');
             $("#button1").css('display', 'inline')
-            $("#button1").toggleClass('fade-in');
+            $("#button1").toggleClass("fade-in");
             $("#button1").append(`<span>Yes</span><br>`);
             $("#button2").css('display', 'inline');
-            $("#button2").toggleClass('fade-in');
+            $("#button2").toggleClass("fade-in");
             $("#button2").append(`<span>No</span>`);
 
 
@@ -91,9 +94,19 @@ window.onload = function () {
             $("#button2").css('display', 'none');
             $("#button3").css('display', 'none');
             $("#body2").css('display', 'inline');
-            $("#body2").toggleClass('fade-in');
-            $("#body2").append(`<p>I knew a ${gender2} who liked scary stories, too. These were 3 of ${gender3} favorites:<p>`);
+            $("#body2").toggleClass("fade-in");
+            $("#body2").append(`<p>I knew a ${gender2} who liked scary stories, too. <br> These were 3 of ${gender3} favorites:<p>`);
             $("#stories").css('display', 'block');
+
+            var time2 = setTimeout(addcounter, 1000);
+
+            function addcounter() {
+                $("#counter").css('display', 'inline');
+                $("#counter").toggleClass("fade-in");
+                $("#counter").append(timeConverter(time));
+                clock()
+
+            }
 
 
         });
@@ -105,7 +118,7 @@ window.onload = function () {
             $("#button3").css('display', 'none');
             $("#body1").empty();
             $("#body1").css('display', 'inline')
-            $("#body1").toggleClass('fade-in');
+            $("#body1").toggleClass("fade-in");
             $("#body1").append(`<div> That's too bad, ${name}</div>`);
 
             console.log("toobad");
@@ -128,6 +141,8 @@ window.onload = function () {
 
         });
 
+        // STORY 1// The girl in the closet.
+
         $(document).on('click', '#story1', function () {
             $("#story1").css('display', 'none');
             $("#story2").css('display', 'none');
@@ -146,7 +161,6 @@ window.onload = function () {
 
         });
 
-
         $(document).on('click', '#story2', function () {
             $("#story1").css('display', 'none');
             $("#story2").css('display', 'none');
@@ -154,7 +168,7 @@ window.onload = function () {
             $("#body2").css('display', 'none');
             $("#body3").empty()
             $("#body3").css('display', 'inline');
-            $("#body3").toggleClass('fade-in');
+            $("#body3").toggleClass("fade-in");
             $("#body3").append(`<div><h1>Times Up!</h1></div> 
             <p>You just woken up with a blinding white light above you. You look to your left and see what appears to be something shiny, like the silverware set from Christmas dinner. Your head is throbbing. You drop back down. The last thing you remember was walking to your car after the UC bootcamp class. You vaguely recall hearing quick footsteps and then a sudden pain in your neck that felt like a bad bee sting. You rub your eyes and try to sit up. And when you finally do, you realize you're on some sort of table - a cold metallic table, the kind used for operations or seen in morgues.</P>
             Choose:
@@ -164,7 +178,34 @@ window.onload = function () {
 
         });
 
+        // GET OUT 1// This can't be good.
+
         $(document).on('click', '#getout', function () {
+
+            $("#story1").css('display', 'none');
+            $("#story2").css('display', 'none');
+            $("#story3").css('display', 'none');
+            $("#body2").css('display', 'none');
+            $("#body3").empty()
+            $("#body3").css('display', 'inline');
+            $("#body3").toggleClass("fade-in");
+            $("#body3").append(`<div><h1>This can't be good.</h1></div>
+            <p>You try to take a step, but fall to your knees instead. The pain is excruciating, you try to scream, but instead you begin to vomit violently. Your body begins to shake and you tuck yourself into a tight ball. Once the episode subsides you pull yourself up by the table.</p><p>Across from the table next to the Christmas utensils, you see a medicine bottle. You reach for it, hoping it's a remedy, and the label reads:</p>
+            
+           <div style="font-family: 'IM Fell English SC' , serif ; background-color:wheat ; width:50vw; height:auto; color:black; padding:5%;"><h5>Tetraethylammonium[31]</h5><p>Poison: if vomiting, muscle weakness followed by convulsions and cold sweat, seek immediate medical attention or symptoms will increase and may lead to death.
+            </div>
+            <br>
+            <p>You now notice in the lower right corner of your vision a small timer. When did that appear? It looks like the timer in that game you played. Why is it counting down? What is it counting down to?</p>
+
+            <p> The voice in your head, the one that keeps you away from stepping too close to the edge, gets louder and louder and tells you to:</p> 
+            <button id="getout2" class="btn btn-dark">Get Out.</button>  <button id="stay2" class="btn btn-dark">Wait it out.</button>`)
+
+
+        });
+
+        // GET OUT 2// Getting Out
+
+        $(document).on('click', '#getout2', function () {
             console.log("getting the fuck out")
             $("#story1").css('display', 'none');
             $("#story2").css('display', 'none');
@@ -172,19 +213,68 @@ window.onload = function () {
             $("#body2").css('display', 'none');
             $("#body3").empty()
             $("#body3").css('display', 'inline');
-            $("#body3").toggleClass('fade-in');
-            $("#body3").append(`<p>You try to take a step, but fall to your knees instead. The pain is excruciating, you try to scream, but instead you begin to vomit violently. Your body begins to shake and you tuck yourself into a tight ball. Once the episode subsides you pull yourself up by the table. Across from the table next to the Christmas utensils, you see a syringe and a bottle. You reach for the bottle and the label reads:</p>
-            
-           <div style="font-family: 'IM Fell English SC' , serif ; background-color:wheat ; width:50vw; height:auto; color:black; padding:5%;"><h5>Tetraethylammonium[31]</h5><p>WARNING: if vomiting, muscle weakness followed by convulsions and cold sweat, seek medical attention within 30 minutes or symptoms will increase and may lead to death.</div>
-           <br>
+            $("#body3").toggleClass("fade-in");
 
+            $("#body3").append(`<div><h1>Getting Out</h1></div>
+            <p>You pull yourself together, gather your strength and survey the room. </p>
+            
+           <div style="font-family: 'IM Fell English SC' , serif ; background-color:wheat ; width:50vw; height:auto; color:black; padding:5%;"><h5>Tetraethylammonium[31]</h5><p>WARNING: if vomiting, muscle weakness followed by convulsions and cold sweat, seek medical attention within 30 minutes or symptoms will increase and may lead to death.</div>`)
+
+
+        });
+
+        // GET OUT 3//The Door
+
+        $(document).on('click', '#getout3', function () {
+            console.log("getting the fuck out")
+            $("#story1").css('display', 'none');
+            $("#story2").css('display', 'none');
+            $("#story3").css('display', 'none');
+            $("#body2").css('display', 'none');
+            $("#body3").empty()
+            $("#body3").css('display', 'inline');
+            $("#body3").toggleClass("fade-in");
+            $("#body3").append(`< div > <h1>The Door.</h1></div >
+
+            <p>The poison slows your movement getting to the door and took you 3 minutes getting here.</p>
+            <p>The door appears to be made of metal. You place an ear trying to see if you can hear anything on the other side. You hear nothing. </p>
+            <p>You turn the handle and is relieved that it's not locked. You carefully open the door and step out. There's a set of metal stairs leading up and a set leading down.</p>
+            <p>You decide to take the stairs going:</p>
+            <button id="getout5" class="btn btn-dark">Up</button> <button id="getout6" class="btn btn-dark">Down</button>`)
+
+            subtractTime(180)
+
+        });
+
+        // GET OUT 4// Crap Hole. 
+
+        $(document).on('click', '#getout4', function () {
+            console.log("getting the fuck out")
+            $("#story1").css('display', 'none');
+            $("#story2").css('display', 'none');
+            $("#story3").css('display', 'none');
+            $("#body2").css('display', 'none');
+            $("#body3").empty()
+            $("#body3").css('display', 'inline');
+            $("#body3").toggleClass("fade-in");
+            $("#body3").append(`< div > <h1>Crap Hole</h1></div >
+            <p>You crawl under the table and try to pull open the gate</p>
+
+            <p>The gate is locked. You see there's a pad lock holding the gate in place. You pull yourself up and look at the tray of surgical tools and grab the surgical tweezers.</p>
+
+            <p>You vomit down the drain. Wipe your mouth and jam the tweezers into the lock.</p>
+            <p>The rusted lock pops open with surprising relative ease.</p>
+            <p>You lift the gate open. And you realize the lingering bad odor that had filled room came from below.</p>
+            <p>There's enough room for a large body to fit.</p>
+            <p>You look down and see nothing but darkness.</p>
 
             <br>
-            Choose:
+                Choose:
             <span><h5 id="getout2">1.) Oh shit. I need to get out.</h5><h5 id="stay2">2.) I'm still fine, nothing to worry about</h5></span>`)
 
 
         });
+
         $(document).on('click', '#getout2', function () {
             console.log("getting the fuck out")
             $("#story1").css('display', 'none');
@@ -195,8 +285,8 @@ window.onload = function () {
             $("#body3").css('display', 'inline');
             $("#body3").toggleClass('fade-in');
             $("#body3").append(`<p></p>
-           
-            Choose:
+
+                Choose:
             <span><h5 id="getout2">Pull yourself together.</h5><h5 id="stay2">I'm fine, nothing to worry about</h5></span>`)
 
 
@@ -211,15 +301,14 @@ window.onload = function () {
             $("#body2").css('display', 'inline');
             $("#body3").empty();
             $("#body2").empty();
-            $("#body2").toggleClass('fade-in');
-            $("#body2").append(`<h1>Back for more?<h1>`);
+            $("#body2").toggleClass("fade-in");
+            $("#body2").append(`<h1>Time to Waste?<h1>`);
             $("#body2").css('display', 'inline');
             $("#story1").css('display', 'block');
             $("#story2").css('display', 'block');
             $("#story3").css('display', 'block');
 
         });
-
 
 
 
