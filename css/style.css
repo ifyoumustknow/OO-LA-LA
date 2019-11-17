@@ -5,7 +5,7 @@
     height: auto;
     background-color: coral;
     flex-wrap: wrap;
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .timer {
@@ -60,6 +60,7 @@
 }
 
 
+
 .background {
   background: url(gesphaus.jpg) no-repeat center center fixed; 
   background-size: cover;
@@ -72,8 +73,8 @@
 }
 
 .title {
+  top:0%;
   width:50vw;
-  margin: auto;
   font-size: 4vw;
   text-align: center;
   font-family: 'Bitter', serif;
