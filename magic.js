@@ -178,10 +178,13 @@ window.onload = function () {
 
            </p>Next morning, Mr. and Mrs. ${last} goes downstairs and begins their morning routine. Mrs. ${last} opens the refrigerator and finds an empty carton of milk. Mrs. ${last} voice rises, "Who drank all the milk and putted it back in the refrigerator? The girl now setting at the kitchen table says, "It was the ${gender2} in the closet". Mrs. ${last} turns around and stares at the unfamiliar girl for a few seconds, then realizes and says with a smile "Don't give me that excuse young lady.". The girl smiles back obediently. "May I please have some pancakes?" the girl politely asks and Mrs. ${last} says "Of course, dear. Did you sleep well?"<br>
 
-The End.<p></div>`)
+The End.<p></div>
 
             $("#button3").css('display', 'inline');
 
+            <div>The End.</div>
+
+                <div>$("#button3").css('display', 'inline');</div>`)
 
 
         });
@@ -526,9 +529,6 @@ The End.<p></div>`)
 
         }
 
-
-
     });
-
-
 }
+
