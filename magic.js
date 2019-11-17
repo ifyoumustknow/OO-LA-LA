@@ -503,8 +503,6 @@ The End.<p></div>
             return minutes + ":" + seconds;
         }
 
-
-
         var count = 0;
 
         function subtractTime(secondsToSubtract) {
