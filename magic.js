@@ -176,15 +176,12 @@ window.onload = function () {
 
            <p>Some time passed, and ${name} woke up cold and shivering. ${name}'s blanket was completely stripped from ${gender3} bed. ${name} looks over and sees a corner of ${gender3} covers peeking out from the closet door. ${gender} get's up slowly and crawls over to the closet door. ${gender}stretches out ${gender3} and grabs the blanket. ${name} tugs at it, but the blanket yanks back causing ${name} to fly forward and into the closet. The closet door slams closed.<p>
 
-           </p>Next morning, Mr. and Mrs. ${last} goes downstairs and begins their morning routine. Mrs. ${last} opens the refrigerator and finds an empty carton of milk. Mrs. ${last} voice rises, "Who drank all the milk and putted it back in the refrigerator? The girl now setting at the kitchen table says, "It was the ${gender2} in the closet". Mrs. ${last} turns around and stares at the unfamiliar girl for a few seconds, then realizes and says with a smile "Don't give me that excuse young lady.". The girl smiles back obediently. "May I please have some pancakes?" the girl politely asks and Mrs. ${last} says "Of course, dear. Did you sleep well?"<br>
+           <p>Next morning, Mr. and Mrs. ${last} goes downstairs and begins their morning routine. Mrs. ${last} opens the refrigerator and finds an empty carton of milk. Mrs. ${last} voice rises, "Who drank all the milk and putted it back in the refrigerator? The girl now setting at the kitchen table says, "It was the ${gender2} in the closet". Mrs. ${last} turns around and stares at the unfamiliar girl for a few seconds, then realizes and says with a smile "Don't give me that excuse young lady.". The girl smiles back obediently. "May I please have some pancakes?" the girl politely asks and Mrs. ${last} says "Of course, dear. Did you sleep well?"<br></p>
 
-The End.<p></div>
-
-            $("#button3").css('display', 'inline');
 
             <div>The End.</div>
 
-                <div>$("#button3").css('display', 'inline');</div>`)
+            <button id="startover" class="btn btn-dark">Start Over</button>`)
 
 
         });
